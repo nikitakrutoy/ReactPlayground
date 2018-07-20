@@ -17,7 +17,7 @@ class Gradient extends Component {
 
     componentWillMount() {
         gradientUpdater.callback = (angle, colorStop) => {
-            console.log(this);
+            // console.log(this);
             this.setState({
                 gradientStyle: {
                     background: 'linear-gradient(' + angle + 'deg, rgba(255,0,0,.8), rgba(255,0,0,0) ' +  colorStop + '%)'
