@@ -26,7 +26,7 @@ class Header extends Component {
         <header className="Header" onClick={clickOnHeader}>
           <img src="/src/logo.svg" className="Header-logo" alt="logo" />
           <h1 className="Header-title">React Playground</h1>
-            <button onClick={clickOnButton}>CLICK</button>
+            <button onClick={clickOnButton} type="button" class="btn btn-outline-light">CLICK</button>
         </header>
     );
   }
