@@ -34,6 +34,9 @@ class MyAlert extends Component {
   render() {
     return (
         <div className="alert_item" >
+            <div>
+                Event handling using custom events
+            </div>
             <Alert bsStyle="danger">
                 { this.state.message }
             </Alert>

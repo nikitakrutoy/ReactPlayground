@@ -15,15 +15,18 @@ class Header extends Component {
           console.info("click on header");
           let event = new CustomEvent('penetration-to-header', { detail: { info: 'Alfa'}});
           window.dispatchEvent(event);
+      }
 
+      function clickOnButton(e) {
+          e.stopPropagation()
           let target = document.querySelector(".alert_item");
           target.dispatchEvent(new CustomEvent('targeted-event', { detail: { info: 'Omega'}}));
       }
     return (
-        <header className="Header" >
+        <header className="Header" onClick={clickOnHeader}>
           <img src="/src/logo.svg" className="Header-logo" alt="logo" />
           <h1 className="Header-title">React Playground</h1>
-            <button onClick={clickOnHeader}>CLICK</button>
+            <button onClick={clickOnButton}>CLICK</button>
         </header>
     );
   }
