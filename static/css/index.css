@@ -1,4 +1,4 @@
-html, body, #content {
+html, body {
     height: 100%;
 }
 
@@ -22,6 +22,7 @@ html, body, #content {
 .gradient-block {
     width: 100%;
     height: 400px;
+    margin-bottom: 10px;
 }
 
 .AppsContainer {
